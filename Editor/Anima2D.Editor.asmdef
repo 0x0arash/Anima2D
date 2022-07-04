@@ -1,0 +1,18 @@
+{
+    "name": "Anima2D.Editor",
+    "rootNamespace": "ArashGh.Anima2D.Editor",
+    "references": [
+        "GUID:40678fff4d1e78541bdc931bf0a9993c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

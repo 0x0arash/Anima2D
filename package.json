@@ -1,0 +1,21 @@
+{
+  "name": "com.arashgh.anima2d",
+  "version": "0.0.1",
+  "author": {
+    "name": "Arash Ghorban",
+    "url": "https://github.com/ArashGh"
+  },
+  "unity": "2021.4",
+  "license": "Apache-2.0",
+  "description": "Better 2d animations in Unity.",
+  "displayName": "Anima 2D",
+  "keywords": [
+    "unity",
+    "animation",
+    "2d",
+    "2d-animation",
+    "unity2d",
+    "unity-animation"
+  ],
+  "dependencies": {}
+}
