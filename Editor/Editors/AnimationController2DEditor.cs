@@ -103,10 +103,15 @@ namespace ArashGh.Anima2D.Editor
 
             EditorGUILayout.Space();
 
+            if (controller.animations.Count <= 0)
+                GUI.enabled = false;
+
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Start Animation");
             controller.startAnimationIndex = EditorGUILayout.Popup(controller.startAnimationIndex, availableOptions);
             EditorGUILayout.EndHorizontal();
+
+            GUI.enabled = true;
 
             EditorGUILayout.Space();
 

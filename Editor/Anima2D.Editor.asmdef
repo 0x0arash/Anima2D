@@ -2,7 +2,8 @@
     "name": "Anima2D.Editor",
     "rootNamespace": "ArashGh.Anima2D.Editor",
     "references": [
-        "GUID:40678fff4d1e78541bdc931bf0a9993c"
+        "GUID:40678fff4d1e78541bdc931bf0a9993c",
+        "GUID:f88fb04354076c646a4107a491394033"
     ],
     "includePlatforms": [
         "Editor"

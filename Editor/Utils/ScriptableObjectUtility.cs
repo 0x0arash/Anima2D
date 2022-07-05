@@ -1,5 +1,5 @@
 using ArashGh.Anima2D.Definitions;
-using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
@@ -12,12 +12,10 @@ namespace ArashGh.Anima2D.Editor
         {
             T asset = ScriptableObject.CreateInstance<T>();
 
-            MethodInfo getActiveFolderPath = typeof(ProjectWindowUtil).GetMethod("GetActiveFolderPath", BindingFlags.Static | BindingFlags.NonPublic);
+            var typeName = typeof(T).Name;
+            var path = EditorUtility.SaveFilePanel($"Save New {typeName}", "Assets", $"New {typeName}", "anima2d.asset");
 
-            string folderPath = (string)getActiveFolderPath.Invoke(null, null);
-            string path = AssetDatabase.GenerateUniqueAssetPath(folderPath + $"/New {typeof(T).Name}.asset");
-
-            ProjectWindowUtil.CreateAsset(asset, path);
+            AssetDatabase.CreateAsset(asset, "Assets/" + Path.GetRelativePath("Assets", path));
         }
     }
 }
